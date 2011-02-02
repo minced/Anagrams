@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script type="text/javascript" src="trie.byrne.js"> </script>
+  <script type="text/javascript" src="TWL06.js"> </script>
+</head>
+<!-- 
+Test: 
+place no, more, stars in trie. "astronomers" should
+give the six permutations of "no more stars" as output
+-->
+<body>
+  <script type="text/javascript" src="anagram.algorithm.require.seeds.no.debug.js"> </script>
+
+  <script type="text/javascript" >
+    console.log("BUH");
+    anagramer = new Anagram();
+    anagramer.returnPartialMatch = false;
+    anagramer.minWordLength = 2;
+    anagramer.add("NO");
+    anagramer.add("MORE");
+    anagramer.add("STARS");
+    anagramer.add("ASS");
+    anagramer.loadDictionary(words);
+    console.log("loading dictionary complete.");
+    var phrases = anagramer.anagramWithSeeds("ATROOERS","NMSX");
+//    anagramer.verifySeedPlacement("MMVE" , "MY VERY EAGER MOTHER" );
+</script>
+
+</body>
+</html>
