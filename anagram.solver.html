@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script type="text/javascript" src="trie.byrne.js"> </script>
+    <script type="text/javascript" src="TWL06.js" > </script>
+    <script type="text/javascript" src="anagrams.js" > </script>
+    <script type="text/javascript" src="anagram.solver.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript"> 
+      var dictionaryIsLoaded=false;
+      anagramer=new Anagram();
+      anagramer.returnPartialMatch=false;
+    </script>
+
+
+    <!-- just for fun-->
+    <input type=button value="Hello" onclick="hello();" />
+
+    <form name="anagramOptions" action = "">
+      Letters to anagram: <input type="text" name="letters"/> <br/>
+
+      Require at least 
+      <select name="wordLimit" >
+	<option value="any"> no lower limit </option>
+	<option value="2"> 2 </option>
+	<option value="3"> 3 </option>
+	<option value="4"> 4 </option>
+	<option value="5"> 5 </option>
+	<option value="6"> 6 </option>
+	<option value="7"> 7 </option>
+	<option value="8"> 8 </option>
+	<option value="9"> 9 </option>
+	<option value="10"> 10 </option>
+      </select> letters in each word. <br/>
+
+      Limit number of matches to
+      <select name="matchLimit" > 
+	<option value="10"> 10 </option>
+	<option value="50"> 50 </option>
+      </select> <br/>
+
+      Seed Letters: <input type="text" name="seedLetters" />  
+      <input type="checkbox" name="useSeedLetters" value="seed"/> Use Seed Letters <br/>
+      <br/>
+
+      <input type="button" name="computeAnagrams" 
+	     value="Find Anagrams" onclick="hello();"/>
+    </form>
+
+    <div id="results"> buh </div>
+  </body>
+</html>
