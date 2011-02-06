@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <style type="text/css" > 
+      @import "AnagramUI.css";
+    </style>
+  </head>
+
+  <body>
+
+    <div id="title">
+      <h1> Anagrams </h1>
+    </div>
+
+    <div id="playerArea" > 
+
+      <div class="player"> 
+	<h3> Player A </h3>
+	<div class = "playerWords"> Player A's words go here </div>
+	<div class = "playerScore" > <h4> Player A score goes here </h4> </div>
+      </div>
+
+      <div class="player"> 
+	<h3> Player B </h3>
+	<div class = "playerWords"> Player B's words go here </div>
+	<div class = "playerScore" > <h4> Player B score goes here </h4> </div>
+      </div>
+
+    </div>
+
+    <div id = "playField" >
+      <div id = "seedLetterArea" > 
+	<div id = "seedLetterTray">
+	  <h3> Seed Letters </h3> 
+	  Seed Letters Go Here
+	</div>
+	<div id = "newSeedLetterTimerArea" > 
+	  <p> Next Seed Letter in:
+	    <span id="newSeedLetterTimer"> 0:30 </span>
+	  </p>
+	</div>
+      </div>
+      <br/>
+      <div id = "wordEntryArea" > 
+	<div id = "foundWordButton"> Enter Anagram </div>
+	
+	<p> Time to enter words: 
+	  <span id = "wordEntryTimer" > 0:30 </span>
+	</p>
+	
+
+	<div id = "wordEntryInput" > Input form for 
+	  new words goes here (invisible until buzzer clicked) </div>
+      </div>
+    </div>
+  </body>
+</html>

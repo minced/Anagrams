@@ -1,0 +1,78 @@
+
+#title {
+
+}
+
+#playfield {
+    float: left;
+}
+
+#seedLetterArea {
+    border: 2px solid gray;
+    margin: 10px;
+}
+
+#seedLetterTray {
+    margin: 10px;
+    background-color: red;
+    border: 2px solid gray;
+}
+
+#seedLetterTray h3 {
+    margin: 3px;
+}
+
+#newSeedLetterTimerArea {
+    margin: 10px;
+}
+
+#newSeedLetterTimer {
+    background-color: azure;
+    border: 2px solid gray;
+}
+
+
+#wordEntryArea {
+    
+}
+
+#wordEntryTimer {
+    background-color: azure;
+    border: 2px solid gray;
+}
+
+#wordEntryInput {
+    float: right;
+    border: 2px solid gray;
+}
+
+#foundWordButton {
+    float: left;
+    margin: 10px;
+    border: 2px solid gray;
+    width: 100px;
+}
+
+#playerArea {
+    float: left;
+}
+
+.player {
+
+    margin: 10px;
+    border: 2px solid gray;
+}
+ 
+.playerWords {
+
+}
+
+.playerScore {
+
+}
+
+
+.player h3 {
+    font: italic 1.4em georgia,sans-serif;
+}
+
