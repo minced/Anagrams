@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script type="text/javascript" src="AnagramObjects.js" > </script>
+</head>
+<body>
+  <div id="timer"> time </div>
+  <script type="text/javascript" >
+
+    var hello = function ()  {
+    alert("TIME IS UP!");
+    };
+    var b = document.getElementById("timer");
+    b.innerHTML = "poop";
+    var myTimer = ANAGRAMOBJECT.makeTimer("timer", hello);
+    myTimer.startCountdown(4);
+  </script>
+
+</body>
+</html>
